@@ -5,6 +5,7 @@ using UnityEngine;
 public class Movimiento : MonoBehaviour
 {
     private Rigidbody rb;
+    public float velocidad;
 
     private void Start()
     {
@@ -19,8 +20,8 @@ public class Movimiento : MonoBehaviour
         float rotacionZ = rotacionActual.z;
 
         // Movimiento en cada eje
-        float movimientoX = Input.GetAxis("Horizontal");
-        float movimientoY = Input.GetAxis("Vertical");
+        float movimientoX = Input.GetAxis("Horizontal")*velocidad;
+        float movimientoY = Input.GetAxis("Vertical")*velocidad;
 
         // Mover al jugador igual que la cámara
         if (rotacionX == 0 && rotacionZ == -1)
