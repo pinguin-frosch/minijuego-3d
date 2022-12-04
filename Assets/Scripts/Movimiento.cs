@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
-    [SerializeField] private int velocidad;
-    [SerializeField] private float gravityScale;
     private Rigidbody rb;
 
     private void Start()
@@ -18,11 +16,6 @@ public class Movimiento : MonoBehaviour
         float movimientoX = Input.GetAxis("Horizontal");
         float movimientoY = Input.GetAxis("Vertical");
 
-        rb.velocity = new Vector3(movimientoX, 0, movimientoY) * velocidad;
-    }
-
-    private void FixedUpdate()
-    {
-        rb.AddForce(Physics.gravity * gravityScale, ForceMode.Acceleration);
+        rb.velocity = new Vector3(movimientoX, 0, movimientoY);
     }
 }
