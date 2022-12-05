@@ -1503,7 +1503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1649579399986597812, guid: 5484db277a2bd254a85ed124bd58e323, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.158
       objectReference: {fileID: 0}
     - target: {fileID: 1649579399986597812, guid: 5484db277a2bd254a85ed124bd58e323, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1578,6 +1578,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NombreEscena: Nivel 3
+--- !u!114 &1570318963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407534586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b62943e875a895e5284dce5b045b8182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1595385327
 PrefabInstance:
   m_ObjectHideFlags: 0
